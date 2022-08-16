@@ -14,7 +14,7 @@ public class Method2 {
 		Method2 m2=new Method2();
 		Method2 m1=new Method2();
 		Method2 m4=new Method2();
-	System.out.println("xyz");
+	System.out.println("aaa");
 	}
 	
 
