@@ -5,7 +5,7 @@ public class Method2 {
 	
 	
 	static {
-		System.out.println("Welcome to codeograph");
+		System.out.println("Welcome to codeograph1");
 	}
 	{
 		System.out.println("Non static block");
