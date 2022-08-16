@@ -8,7 +8,7 @@ final public void myMethod() {
 	System.out.println("Final Method");
 }
 	public static void main(String[] args) {
-		a=a+b;
+		//a=a+b;
 		System.out.println();
 
 	}
