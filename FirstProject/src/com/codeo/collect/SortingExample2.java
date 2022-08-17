@@ -21,7 +21,7 @@ public class SortingExample2 {
     	  System.out.println(e.toString());
       }
       System.out.println("==========================");
-    list.sort(Comparator.comparing(Merchant::getMerchant_id).thenComparing(Merchant::getMerchant_name));
+    list.sort(Comparator.comparing(Merchant::getMerchant_name).thenComparing(Merchant::getMerchant_income));
     for(Merchant e:list) {
   	  System.out.println(e.toString());
     }
