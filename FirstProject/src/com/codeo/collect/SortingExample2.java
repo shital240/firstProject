@@ -15,7 +15,7 @@ public class SortingExample2 {
 	list.add(new Merchant(16,"Dellendra",75000));
 	list.add(new Merchant(11,"Sudarshan",79789));
 	list.add(new Merchant(12,"Meghana",75000));
-
+    
       Collections.sort(list, Comparator.comparing(Merchant::getMerchant_id).thenComparing(Merchant::getMerchant_income));
       for(Merchant e:list) {
     	  System.out.println(e.toString());
