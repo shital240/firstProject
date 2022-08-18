@@ -2,9 +2,10 @@ package com.codeo.collect;
 
 public class Merchant {
 
-	int merchant_id;
+	int merchant_id;//13
 	String merchant_name;
 	double merchant_income;
+	//13,"Akshay",75000
 	public Merchant(int merchant_id, String merchant_name, double merchant_income) {
 		super();
 		this.merchant_id = merchant_id;

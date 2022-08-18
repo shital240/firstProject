@@ -12,6 +12,10 @@ public class ArrayList1 {
 		list1.add(2323.232);
 		list1.add("sudarshan");
 		list1.add(true);
+		list1.add(1);
+		list1.add(2323.232);
+		list1.add("sudarshan");
+		list1.add(true);
 		System.out.println(list1);
 	// ArrayList allows duplicate Object
 		List<Integer> list=new ArrayList<>(); //polymorphism

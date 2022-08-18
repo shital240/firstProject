@@ -1,6 +1,7 @@
 package com.codeo.collect;
 
 import java.util.LinkedList;
+import java.util.List;
 
 public class LinkedList1 {
 

@@ -9,34 +9,41 @@ public class SortedSet1 {
 //Duplicates are not allowed 
 	//Objects are getting sorted
 	public static void main(String[] args) {
-		try {
+	//SortedSet==> Interface
+		//TreeSet==> Class
 		SortedSet list=new TreeSet();
-		
+		     
 	        list.add(1);
+	        list.add(10);
 	       list.add(2);
 	       list.add(9);
 	       list.add(3);
 	       list.add(9);
 	       list.add(4);
 	       list.add(5);
-	       
-	       list.add(4);
+	        list.add(4);
+	        list.add(4);
+		       list.add(5);
+		        list.add(4);
 	       System.out.println(list);
-		}
-		catch(ClassCastException e) {
-			e.printStackTrace();
-			System.out.println("Please enter similar type of Objects");
-		}
-		SortedSet<Merchant> list1=new TreeSet<>();
-		list1.add(new Merchant(13,"Akshay",75000));
-		list1.add(new Merchant(14,"Rajat",75658));
-		list1.add(new Merchant(15,"Nagendra",75000));
-		list1.add(new Merchant(16,"Dellendra",75000));
-		list1.add(new Merchant(11,"Sudarshan",79789));
-		list1.add(new Merchant(12,"Meghana",75000));
-		for(Merchant e:list1) {
-	    	  System.out.println(e.toString());
-	      }
+	     	SortedSet<String> set=new TreeSet<>();
+	     	set.add("zukerberg");
+	     	set.add("anderson");
+	     	set.add("sthiphen");
+	     	set.add("matt");
+	     	set.add("hooper");
+	     	set.add("anderson");
+	     	set.add("sthiphen");
+	     	set.add("matt");
+	     	try {
+	     	set.add(null);
+	     	}
+	     	catch(NullPointerException e) {
+	     		e.printStackTrace();
+	     	}
+	     	System.out.println(set);
+	}
+		
 	}
 
-}
+

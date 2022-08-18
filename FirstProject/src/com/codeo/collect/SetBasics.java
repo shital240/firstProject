@@ -9,14 +9,15 @@ public class SetBasics {
 
 	public static void main(String[] args) {
 		//Set ==> Interface
-		//HashSet ==> class
+		//HashSet ==> Base class
 		//LinkedHashSet==> Derieved class of HashSet
 		
-		Set set=new LinkedHashSet();
+		HashSet set=new LinkedHashSet();//polymorphism
 		set.add(1);
 		set.add("codoe");
 		set.add(true);
 		set.add(1);
+		set.add(null);
 		set.add(null);
 		set.add(443.32);
 		set.add("codoe");
