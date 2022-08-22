@@ -4,6 +4,8 @@ import java.util.SortedMap;
 import java.util.TreeMap;
 
 public class TreeMap1{
+	//sortedMap==> Interface
+	//TreeMap==> Class
 	//In sorted map duplicates are not allowed
 	//sorting will be based on key pair
 	public static void main(String[] ar) {
