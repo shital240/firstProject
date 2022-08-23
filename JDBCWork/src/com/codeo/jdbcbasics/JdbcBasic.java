@@ -15,6 +15,7 @@ public class JdbcBasic {
 		//mysql connector 5.7.1==>com.mysql.jdbc.Driver
 		//mysql connector 8+==> com.mysql.cj.jdbc.Driver
 		Class.forName("com.mysql.cj.jdbc.Driver");
+		//Class.forName("sun.jdbc.odbc.JdbcOdbcDriver");
         //2. Establish the connection between database and application
 		Connection con=null;
 		con=DriverManager.getConnection("jdbc:mysql://localhost:3306/employeedirectory", "root", "");
