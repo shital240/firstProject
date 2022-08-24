@@ -8,7 +8,7 @@ import java.sql.Statement;
 
 //Class==> type of class
 //method==> forName();
-public class JdbcBasic {
+public class JdbcBasic extends Object {
 
 	public static void main(String[] args) throws ClassNotFoundException, SQLException {
 		//1. Register JDBC Driver

@@ -20,7 +20,7 @@ public class UpdateData {
 		int record_no=sc.nextInt();
 		
 		 try {
-				//Register JDBC Driver
+				//Register JDBC Driver for mysql database
 			Class.forName("com.mysql.cj.jdbc.Driver");
 			//establish the connection
 			 con=DriverManager.getConnection("jdbc:mysql://localhost:3306/student_management","root","");

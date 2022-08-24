@@ -1,4 +1,4 @@
-package com.codeo.jdbcbasics;
+package com.codeo.postgresql;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -6,7 +6,7 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.Scanner;
 
-public class InsertData {
+public class PostGreSQLInsertion {
 
 	public static void main(String[] args) {
 		Scanner sc=new Scanner(System.in);
@@ -19,11 +19,11 @@ public class InsertData {
 		System.out.println(student_name);
 		
 		 try {
-			//Register JDBC Driver
-		Class.forName("com.mysql.cj.jdbc.Driver");
+			//Register JDBC Driver for postGreSQL
+		Class.forName("org.postgresql.Driver");
 		//establish the connection
 		Connection con=null;
-		 con=DriverManager.getConnection("jdbc:mysql://localhost:3306/student_management","root","");
+		 con=DriverManager.getConnection("jdbc:postgresql://localhost:5432/test_db","postgres","Manager@123#");
 		System.out.println(con);
 		 //create Statement object
 		Statement statement=null;
@@ -31,7 +31,7 @@ public class InsertData {
 			statement=con.createStatement();
 		}
 		//prepare the query
-		String query="insert into student(student_id, student_name, student_mobileno) values("+student_id+",'"+student_name+"','"+student_mobileno+"')";
+		String query="insert into student1(student_id, student_name, student_mobileno) values("+student_id+",'"+student_name+"','"+student_mobileno+"')";
 		System.out.println(query);
 		int result=0;
 		//send and execute the query 
@@ -59,6 +59,7 @@ public class InsertData {
 			 e.printStackTrace();
 		 }
 	
+
 	}
 
 }
