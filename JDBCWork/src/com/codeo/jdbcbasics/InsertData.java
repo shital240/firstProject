@@ -35,6 +35,7 @@ public class InsertData {
 		//send and execute the query 
 		if(statement!=null) {
 			result=statement.executeUpdate(query);
+		 System.out.println("Value of result will be: "+result);
 		}
 		//process the result
 		if(result==0) {
