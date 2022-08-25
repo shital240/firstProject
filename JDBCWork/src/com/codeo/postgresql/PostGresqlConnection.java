@@ -6,12 +6,12 @@ import java.sql.DriverManager;
 public class PostGresqlConnection {
 
 	public static void main(String[] args) {
-		  Connection c = null;
+		  Connection connection = null;
 	      try {
 	    	  //Register JDBC Driver for postgresql
 	         Class.forName("org.postgresql.Driver");
 	         //Establishing connection between application and postgresql database software
-	         c = DriverManager.getConnection("jdbc:postgresql://localhost:5432/testdb",
+	         connection = DriverManager.getConnection("jdbc:postgresql://localhost:5432/testdb",
 	            "postgres", "Manager@123#");
 	      } catch (Exception e) {
 	         e.printStackTrace();
