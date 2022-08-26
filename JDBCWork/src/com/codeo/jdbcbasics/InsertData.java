@@ -40,11 +40,11 @@ public class InsertData {
 		 System.out.println("Value of result will be: "+result);
 		}
 		//process the result
-		if(result==0) {
-			System.out.println("Data is not inserted");
+		if(result==1) {
+			System.out.println("Data inserted successfully");
 		}
 		else {
-			System.out.println("Data is inserted");
+			System.out.println("Data is not inserted");
 		}
 		statement.close();
 		con.close();
