@@ -19,7 +19,7 @@ public class InsertData {
 		System.out.println(student_name);
 		
 		 try {
-			//Register JDBC Driver
+			//Register JDBC Driver  for mysql
 		Class.forName("com.mysql.cj.jdbc.Driver");
 		//establish the connection
 		Connection con=null;

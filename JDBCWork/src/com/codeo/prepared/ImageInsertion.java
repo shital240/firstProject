@@ -26,6 +26,7 @@ public class ImageInsertion {
 	//locate the path
 	File file=new File(student_pic_path);
 	long length=file.length();
+	System.out.println("File Length: "+length);
 	//create the input stream for holding imagepath
 	FileInputStream fis=new FileInputStream(file);
 	//Register JDBC Driver

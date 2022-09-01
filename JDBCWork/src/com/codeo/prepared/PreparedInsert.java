@@ -24,6 +24,7 @@ public class PreparedInsert {
    		//establish the connection
    		Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/employeedirectory","root","");
        //create Prepared Statement
+   		//PreparedStatement ==> Interface
    		PreparedStatement psmt=null;
    		String insert_query="insert into tbl_employee(name, dob, department, salary) values(?,?,?,?)";
    		System.out.println(insert_query);

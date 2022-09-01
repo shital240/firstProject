@@ -31,9 +31,11 @@ public class MovieBookingApp {
 		System.out.println(con);
 		//write a query and PreparedStatement object
 		String insert_query="insert into movie_booking(viewer_name, viewer_age, seat_no, movie_name, movie_rate) values(?,?,?,?,?)";
+	//	String billing_query="select sum(movie_rate) from movie_booking";
 		System.out.println(insert_query);
 		if(con!=null) {
 			psmt=con.prepareStatement(insert_query);
+			//psmt=con.prepareStatement(billing_query);
 		}
 		//depending on user value;
 		for(int i=0;i<viewers;i++) {
