@@ -17,12 +17,13 @@ public class MovieBookingApp {
 		String age=null;
 		double movie_rate=0.0;
 		int result[];
-		int viewers;
-		int seat_no=3;
+		int viewers=0;
+		int seat_no=1;
 		//Program start
 		sc=new Scanner(System.in);
 		System.out.println("Enter no of viewers");
 		viewers=sc.nextInt();
+		//viewers=2
 		try {
 		//Register JDBC Driver
 		Class.forName("com.mysql.cj.jdbc.Driver");
