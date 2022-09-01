@@ -33,14 +33,14 @@ public class InsertData {
 		//prepare the query
 		String query="insert into student(student_id, student_name, student_mobileno) values("+student_id+",'"+student_name+"','"+student_mobileno+"')";
 		System.out.println(query);
-		int result=0;
+		int result=1;
 		//send and execute the query 
 		if(statement!=null) {
 			result=statement.executeUpdate(query);
 		 System.out.println("Value of result will be: "+result);
 		}
 		//process the result
-		if(result==1) {
+		if(result==0) {
 			System.out.println("Data inserted successfully");
 		}
 		else {
