@@ -26,6 +26,8 @@ public class Student {
 	public static void main(String[] args) {
 		//default constructor
 		Student sudarshan=new Student();
+		Student sudarshan1 = null;
+		System.out.println("my reference variable value: "+sudarshan1);
 		System.out.println(sudarshan.student_name+" "+sudarshan.student_rollno+ " "+sudarshan.student_percent);
 		//parameterized constructor
 		Student deepanshu=new Student(12,"Depanshu",67.98);
