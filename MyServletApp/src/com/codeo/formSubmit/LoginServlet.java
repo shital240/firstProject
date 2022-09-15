@@ -10,8 +10,7 @@ import javax.servlet.http.HttpServletResponse;
 public class LoginServlet extends HttpServlet {
 
 	public void doPost(HttpServletRequest request,HttpServletResponse response) throws IOException {
-		PrintWriter pw=null;
-		pw=response.getWriter();
+		PrintWriter pw=response.getWriter();
 		String email=null;
 		String password=null;
 		int age=0;
@@ -34,4 +33,5 @@ public class LoginServlet extends HttpServlet {
 		}
 		
 	}
+	
 }
