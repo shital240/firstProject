@@ -1,0 +1,24 @@
+<web-app xmlns="http://java.sun.com/xml/ns/javaee" 
+         version="2.5" 
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"> 
+
+
+  <display-name>Archetype Created Web Application</display-name>
+<servlet>
+  	<servlet-name>Form</servlet-name>
+  	<servlet-class>com.codeo.FileSubmission.FormSubmit</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>Form</servlet-name>
+  	<url-pattern>/formSubmit</url-pattern>
+  </servlet-mapping>
+  <servlet>
+  	<servlet-name>Form1</servlet-name>
+  	<servlet-class>com.codeo.studentdetails.Student_details</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>Form1</servlet-name>
+  	<url-pattern>/studentDetails</url-pattern>
+  </servlet-mapping>
+</web-app>
